@@ -76,20 +76,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "InviteStory" },
-      { name: "description", content: "Ethereal Invite creates stunning, mobile-first digital wedding invitations inspired by traditional Indian aesthetics." },
+      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
+      { title: "Megha & Aniruddha — Wedding Invitation | 06 Dec 2026, Calicut" },
+      {
+        name: "description",
+        content:
+          "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on Sunday, 6 December 2026 at Kadody Convention Centre, Calicut, Kerala.",
+      },
+      { name: "theme-color", content: "#07221a" },
       { name: "author", content: "InviteStory" },
-      { property: "og:title", content: "InviteStory" },
-      { property: "og:description", content: "Ethereal Invite creates stunning, mobile-first digital wedding invitations inspired by traditional Indian aesthetics." },
+      { property: "og:site_name", content: "Megha & Aniruddha Wedding Invitation" },
+      { property: "og:title", content: "Megha & Aniruddha — Wedding Invitation" },
+      {
+        property: "og:description",
+        content:
+          "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on Sunday, 6 December 2026 at Kadody Convention Centre, Calicut, Kerala.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://megha-weds-anirudh.pages.dev/" },
+      { property: "og:image", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content:
+          "Megha & Aniruddha Wedding Invitation — 06 December 2026, Kadody Convention Centre, Calicut",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@invitestory.in" },
-      { name: "twitter:title", content: "InviteStory" },
-      { name: "twitter:description", content: "Ethereal Invite creates stunning, mobile-first digital wedding invitations inspired by traditional Indian aesthetics." },
-
+      { name: "twitter:title", content: "Megha & Aniruddha — Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on Sunday, 6 December 2026 at Kadody Convention Centre, Calicut, Kerala.",
+      },
+      { name: "twitter:image", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
     ],
     links: [
+      { rel: "canonical", href: "https://megha-weds-anirudh.pages.dev/" },
       {
         rel: "stylesheet",
         href: appCss,

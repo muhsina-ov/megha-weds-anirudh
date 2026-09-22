@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Hero } from "@/components/wedding/Hero";
 import { Couple } from "@/components/wedding/Couple";
+import { Gallery } from "@/components/wedding/Gallery";
 import { Countdown } from "@/components/wedding/Countdown";
 import { EventDetails } from "@/components/wedding/EventDetails";
 import { Footer } from "@/components/wedding/Footer";
@@ -10,9 +11,9 @@ import { Opener } from "@/components/wedding/Opener";
 import { BgMusic } from "@/components/wedding/BgMusic";
 import { ScrollProgress } from "@/components/wedding/ScrollProgress";
 
-const title = "Megha & Aniruddha · 06 December 2026, Calicut";
+const title = "Megha & Aniruddha · 6 December 2026, Calicut";
 const description =
-  "Together with their families, Megha R and Aniruddha Mazumder invite you to their wedding on 06 December 2026 at Kadody Convention Centre, Calicut.";
+  "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on 6 December 2026 at Kadody Convention Centre, Calicut.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,6 +56,7 @@ function Invitation() {
       >
         <Hero />
         <Couple />
+        <Gallery />
         <Countdown />
         <EventDetails />
         <Footer />

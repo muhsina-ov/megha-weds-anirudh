@@ -6,11 +6,9 @@ import { Reveal, Ornament } from "./Reveal";
 function Person({
   person,
   role,
-  flip,
 }: {
   person: typeof wedding.bride;
   role: string;
-  flip?: boolean;
 }) {
   return (
     <Reveal className="relative">
@@ -23,21 +21,32 @@ function Person({
           }}
         />
         <div className="relative flex flex-col items-center text-center">
-          <div className="from-gold/25 relative h-40 w-40 overflow-hidden rounded-full bg-gradient-to-b to-transparent">
-            <img
-              src={person.image}
-              alt={person.fullName}
-              loading="lazy"
-              width={768}
-              height={896}
-              className={`h-full w-full object-cover object-top ${flip ? "scale-x-[-1]" : ""}`}
-            />
+          <div className="from-gold/50 via-gold/25 relative h-44 w-44 overflow-hidden rounded-full p-1 bg-gradient-to-b to-transparent shadow-lg">
+            <div className="h-full w-full overflow-hidden rounded-full ring-2 ring-gold/40">
+              <img
+                src={person.image}
+                alt={person.fullName}
+                loading="lazy"
+                width={682}
+                height={1024}
+                style={{
+                  objectPosition: person.imagePosition || "center top",
+                  transform: person.imageScale ? `scale(${person.imageScale})` : undefined,
+                }}
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
           </div>
           <span className="text-gold mt-5 text-[0.6rem] tracking-[0.45em] uppercase">
             {role}
           </span>
           <h3 className="text-primary mt-2 text-3xl font-light">{person.fullName}</h3>
           <p className="text-muted-foreground mt-1 text-xs tracking-wide">{person.line}</p>
+          {person.origin && (
+            <p className="text-gold/90 mt-1 text-[0.65rem] tracking-[0.25em] uppercase font-medium">
+              {person.origin}
+            </p>
+          )}
           <span className="rule-gold my-4 w-20" />
           <p className="text-foreground/75 text-sm leading-relaxed">{person.note}</p>
         </div>
@@ -69,19 +78,19 @@ export function Couple() {
           <Ornament label="The Couple" />
           <h2 className="text-primary mt-5 text-4xl font-light">Two hearts, one thread</h2>
           <p className="text-muted-foreground mx-auto mt-3 max-w-xs text-sm leading-relaxed">
-            Seven vows, seven steps, and a lifetime of ordinary mornings made beautiful.
+            From the shores of Calicut to the cultural melodies of Kolkata — two lives united in love.
           </p>
         </Reveal>
 
         <div className="mt-10 space-y-8">
           <Parallax speed={26}>
-            <Person person={wedding.groom} role="The Groom" />
+            <Person person={wedding.bride} role="The Bride" />
           </Parallax>
           <div className="flex justify-center">
             <span className="font-script text-gold animate-float-soft text-5xl">&amp;</span>
           </div>
           <Parallax speed={-26}>
-            <Person person={wedding.bride} role="The Bride" flip />
+            <Person person={wedding.groom} role="The Groom" />
           </Parallax>
         </div>
       </div>

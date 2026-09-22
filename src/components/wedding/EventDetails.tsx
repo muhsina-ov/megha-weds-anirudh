@@ -18,7 +18,7 @@ function addToCalendar() {
     `DTSTAMP:${icsStamp(new Date().toISOString())}`,
     `DTSTART:${icsStamp(wedding.dateISO)}`,
     `DTEND:${icsStamp(wedding.endISO)}`,
-    `SUMMARY:${wedding.groom.name} & ${wedding.bride.name} — Wedding`,
+    `SUMMARY:${wedding.bride.name} & ${wedding.groom.name} — Wedding`,
     `LOCATION:${wedding.venue.name}, ${wedding.venue.address}`,
     "DESCRIPTION:With love, we invite you to our wedding.",
     "END:VEVENT",

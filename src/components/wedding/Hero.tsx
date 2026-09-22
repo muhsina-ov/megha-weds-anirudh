@@ -69,11 +69,11 @@ export function Hero() {
             className="mt-5 flex flex-col items-center leading-[0.82]"
           >
             <span className="text-gold-foil font-display text-[4.25rem] font-light">
-              {wedding.groom.name}
+              {wedding.bride.name}
             </span>
             <span className="font-script text-gold/80 my-1 text-3xl">and</span>
             <span className="text-gold-foil font-display text-[4.25rem] font-light">
-              {wedding.bride.name}
+              {wedding.groom.name}
             </span>
           </motion.h1>
 
@@ -90,7 +90,7 @@ export function Hero() {
             transition={{ delay: 1.15, duration: 0.9 }}
             className="text-ivory/85 mt-5 text-sm tracking-[0.35em] uppercase"
           >
-            06 · 12 · 2026
+            {wedding.dateShortLabel}
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -98,21 +98,29 @@ export function Hero() {
             transition={{ delay: 1.35, duration: 0.9 }}
             className="text-ivory/60 mt-2 text-[0.7rem] tracking-[0.25em] uppercase"
           >
-            Calicut, Kerala
+            {wedding.venue.city}
           </motion.p>
         </motion.div>
 
-        <motion.img
-          src={images.coupleHero}
-          alt="Megha and Aniruddha"
-          width={682}
-          height={1024}
+        <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="mt-auto w-[88%] max-w-[350px] rounded-[2rem] border border-gold/30 object-cover brightness-110 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)]"
-        />
+          className="relative mt-auto w-[84%] max-w-[340px] aspect-[4/5] rounded-t-full p-[2.5px] bg-gradient-to-b from-gold/80 via-gold/30 to-transparent shadow-[0_25px_50px_rgba(0,0,0,0.55)]"
+        >
+          <div className="relative h-full w-full rounded-t-full overflow-hidden">
+            <img
+              src={images.coupleHero}
+              alt={`${wedding.bride.name} & ${wedding.groom.name}`}
+              width={682}
+              height={1024}
+              className="h-full w-full object-cover object-center brightness-105 contrast-105"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/95 via-emerald-deep/20 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 rounded-t-full ring-1 ring-inset ring-gold/40" />
+          </div>
+        </motion.div>
       </div>
 
       <motion.div
