@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { wedding } from "./data";
+import { images } from "./images";
 import { Reveal, Ornament } from "./Reveal";
 
 const TARGET = new Date(wedding.dateISO).getTime();
@@ -53,7 +54,7 @@ export function Countdown() {
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
         style={{
-          backgroundImage: "url('https://media.invitestory.in/kerala-sands/images/mandala-texture.jpg')",
+          backgroundImage: `url('${images.mandala}')`,
           backgroundSize: "140%",
           backgroundPosition: "center",
         }}

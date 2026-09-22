@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { Aurora } from "@/components/Aurora";
 import { Petals } from "./Petals";
 import { wedding } from "./data";
+import { images } from "./images";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -40,7 +41,7 @@ export function Hero() {
       <Petals count={12} />
 
       <motion.img
-        src="https://media.invitestory.in/kerala-sands/images/garland.png"
+        src={images.garland}
         alt=""
         aria-hidden
         style={{ y: garlandY }}
@@ -102,15 +103,15 @@ export function Hero() {
         </motion.div>
 
         <motion.img
-          src="https://media.invitestory.in/kerala-sands/images/couple-hero.png"
-          alt="Watercolour illustration of the couple"
-          width={1024}
-          height={1408}
+          src={images.coupleHero}
+          alt="Megha and Aniruddha"
+          width={682}
+          height={1024}
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="mt-auto w-[88%] max-w-[350px] brightness-110 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)]"
+          className="mt-auto w-[88%] max-w-[350px] rounded-[2rem] border border-gold/30 object-cover brightness-110 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)]"
         />
       </div>
 

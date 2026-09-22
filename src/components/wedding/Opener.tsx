@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Aurora } from "@/components/Aurora";
 import { Petals } from "./Petals";
 import { wedding } from "./data";
+import { images } from "./images";
 
 /**
  * Full-screen "seal + curtain" opener. Tapping the wax seal splits the
@@ -35,7 +36,7 @@ export function Opener({ onOpen }: { onOpen: () => void }) {
           <div
             className="pointer-events-none absolute inset-0 opacity-20"
             style={{
-              backgroundImage: "url('https://media.invitestory.in/kerala-sands/images/mandala-texture.jpg')",
+              backgroundImage: `url('${images.mandala}')`,
               backgroundSize: "cover",
               backgroundPosition: dir === -1 ? "right center" : "left center",
             }}

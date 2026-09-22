@@ -1,6 +1,7 @@
 import { CalendarPlus, Clock, MapPin, Navigation, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { wedding } from "./data";
+import { images } from "./images";
 import { Reveal, Ornament } from "./Reveal";
 
 function icsStamp(iso: string) {
@@ -92,7 +93,7 @@ export function EventDetails() {
           <div className="border-gold/30 bg-card shadow-luxe mt-6 overflow-hidden rounded-[2rem] border">
             <div className="relative">
               <img
-                src="https://media.invitestory.in/kerala-sands/images/map-preview.jpg"
+                src={images.mapPreview}
                 alt={`Map to ${wedding.venue.name}`}
                 loading="lazy"
                 width={1024}

@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import { Aurora } from "@/components/Aurora";
 import { wedding } from "./data";
+import { images } from "./images";
 import { Reveal, Ornament } from "./Reveal";
 
 export function Footer() {
@@ -9,7 +10,7 @@ export function Footer() {
       <div
         className="pointer-events-none absolute inset-0 opacity-25"
         style={{
-          backgroundImage: "url('https://media.invitestory.in/kerala-sands/images/mandala-texture.jpg')",
+          backgroundImage: `url('${images.mandala}')`,
           backgroundSize: "120%",
           backgroundPosition: "top center",
         }}
@@ -18,14 +19,14 @@ export function Footer() {
       <div className="from-emerald-ink/70 via-emerald-ink/85 to-emerald-ink absolute inset-0 bg-gradient-to-b" />
 
       <img
-        src="https://media.invitestory.in/kerala-sands/images/floral-corner.png"
+        src={images.floralCorner}
         alt=""
         aria-hidden
         loading="lazy"
         className="pointer-events-none absolute -top-4 -left-8 w-36 opacity-30"
       />
       <img
-        src="https://media.invitestory.in/kerala-sands/images/floral-corner.png"
+        src={images.floralCorner}
         alt=""
         aria-hidden
         loading="lazy"
