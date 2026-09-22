@@ -266,7 +266,7 @@ async function createOgImage() {
       <g transform="translate(360, 582)" text-anchor="middle">
         <rect x="-140" y="-14" width="280" height="24" rx="12" fill="#041812" fill-opacity="0.85" stroke="#d4af37" stroke-width="0.8" />
         <text y="2" font-family="'Courier New', monospace" font-size="10.5" letter-spacing="2.5" fill="#fdf1c8" font-weight="600">
-          megha-weds-anirudh.pages.dev
+          megha-weds-aniruddha.invitingyou.top
         </text>
       </g>
     </svg>

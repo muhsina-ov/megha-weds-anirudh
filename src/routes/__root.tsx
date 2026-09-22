@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { title: "Megha & Aniruddha — Wedding Invitation | 06 Dec 2026, Calicut" },
+      { title: "Megha & Aniruddha — Wedding Invitation" },
       {
         name: "description",
         content:
@@ -93,9 +93,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on Sunday, 6 December 2026 at Kadody Convention Centre, Calicut, Kerala.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://megha-weds-anirudh.pages.dev/" },
-      { property: "og:image", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
-      { property: "og:image:secure_url", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
+      { property: "og:url", content: "https://megha-weds-aniruddha.invitingyou.top/" },
+      { property: "og:image", content: "https://megha-weds-aniruddha.invitingyou.top/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://megha-weds-aniruddha.invitingyou.top/og-image.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
@@ -112,10 +112,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on Sunday, 6 December 2026 at Kadody Convention Centre, Calicut, Kerala.",
       },
-      { name: "twitter:image", content: "https://megha-weds-anirudh.pages.dev/og-image.jpg" },
+      { name: "twitter:image", content: "https://megha-weds-aniruddha.invitingyou.top/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://megha-weds-anirudh.pages.dev/" },
+      { rel: "canonical", href: "https://megha-weds-aniruddha.invitingyou.top/" },
       {
         rel: "stylesheet",
         href: appCss,

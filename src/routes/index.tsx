@@ -11,9 +11,11 @@ import { Opener } from "@/components/wedding/Opener";
 import { BgMusic } from "@/components/wedding/BgMusic";
 import { ScrollProgress } from "@/components/wedding/ScrollProgress";
 
-const title = "Megha & Aniruddha · 6 December 2026, Calicut";
+const title = "Megha & Aniruddha — Wedding Invitation";
 const description =
   "Together with their families, Megha R and Aniruddha Mazumder invite you to celebrate their wedding on 6 December 2026 at Kadody Convention Centre, Calicut.";
+const siteUrl = "https://megha-weds-aniruddha.invitingyou.top";
+const ogImage = `${siteUrl}/og-image.jpg`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +25,19 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: siteUrl },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/jpeg" },
+      {
+        property: "og:image:alt",
+        content: "Megha and Aniruddha — 06 December 2026, Calicut",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: ogImage },
     ],
   }),
   component: Invitation,
