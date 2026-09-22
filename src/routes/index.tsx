@@ -7,6 +7,7 @@ import { Countdown } from "@/components/wedding/Countdown";
 import { EventDetails } from "@/components/wedding/EventDetails";
 import { Footer } from "@/components/wedding/Footer";
 import { Opener } from "@/components/wedding/Opener";
+import { BgMusic } from "@/components/wedding/BgMusic";
 import { ScrollProgress } from "@/components/wedding/ScrollProgress";
 
 const title = "Megha & Aniruddha · 06 December 2026, Calicut";
@@ -44,6 +45,7 @@ function Invitation() {
       </AnimatePresence>
 
       {opened && <ScrollProgress />}
+      <BgMusic start={opened} />
 
       <motion.main
         initial={{ opacity: 0, scale: 1.03 }}
