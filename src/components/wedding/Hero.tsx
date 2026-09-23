@@ -66,13 +66,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ delay: 0.4, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-5 flex w-full flex-col items-center overflow-visible leading-[1.04]"
+            className="mt-5 flex w-full flex-col items-center overflow-visible leading-[1.14]"
           >
-            <span className="text-gold-foil font-display text-6xl font-light">
+            <span className="text-gold-foil font-display block overflow-visible pb-2 text-6xl font-light">
               {wedding.bride.name}
             </span>
             <span className="font-script text-gold/80 my-1 text-3xl">and</span>
-            <span className="text-gold-foil font-display text-6xl font-light">
+            <span className="text-gold-foil font-display block overflow-visible pb-2 text-6xl font-light">
               {wedding.groom.name}
             </span>
           </motion.h1>
