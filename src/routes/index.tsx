@@ -44,7 +44,12 @@ export const Route = createFileRoute("/")({
 });
 
 function Invitation() {
-  const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(() => {
+    if (typeof window !== "undefined") {
+      return new URLSearchParams(window.location.search).has("opened");
+    }
+    return false;
+  });
 
   useEffect(() => {
     document.body.style.overflow = opened ? "" : "hidden";

@@ -112,9 +112,9 @@ export function Hero() {
           <div className="relative w-full overflow-hidden">
             <img
               src={images.cartoon}
-              alt={`${wedding.bride.name} & ${wedding.groom.name} — illustrated portrait`}
-              width={408}
-              height={612}
+              alt={`${wedding.bride.name} & ${wedding.groom.name} — wedding portrait`}
+              width={682}
+              height={1024}
               className="h-auto w-full brightness-105 contrast-105"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/60 via-transparent to-transparent" />
