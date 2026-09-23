@@ -3,7 +3,7 @@ const base = import.meta.env.BASE_URL;
 const img = (name: string) => `${base}images/${name}`;
 
 export const images = {
-  bride: img("bride.jpg"),
+  bride: img("bride-portrait.jpg"),
   groom: img("groom.png"),
   coupleHero: img("couple-1.jpg"),
   couple1: img("couple-1.jpg"),
