@@ -8,6 +8,7 @@ export const wedding = {
     image: "/images/groom.png",
     imagePosition: "center 22%",
     imageScale: 1.15,
+    imageOrigin: "center center",
   },
   bride: {
     name: "Megha",
@@ -16,8 +17,9 @@ export const wedding = {
     origin: "Calicut, Kerala",
     note: "Rooted in love, grace, and rich memories of Calicut, ready to write our new chapter of shared laughter and dreams.",
     image: "/images/bride.jpg",
-    imagePosition: "center 0%",
-    imageScale: 1,
+    imagePosition: "center 18%",
+    imageScale: 1.45,
+    imageOrigin: "center 30%",
   },
   // 6 December 2026, events from 11:00 AM IST
   dateISO: "2026-12-06T11:00:00+05:30",

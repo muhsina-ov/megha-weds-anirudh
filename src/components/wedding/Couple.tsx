@@ -29,11 +29,14 @@ function Person({
                 loading="lazy"
                 width={682}
                 height={1024}
-                style={{
-                  objectPosition: person.imagePosition || "center top",
-                  transform: person.imageScale ? `scale(${person.imageScale})` : undefined,
-                }}
-                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                style={
+                  {
+                    objectPosition: person.imagePosition || "center top",
+                    transformOrigin: person.imageOrigin || "center center",
+                    "--base-scale": person.imageScale || 1,
+                  } as React.CSSProperties
+                }
+                className="h-full w-full object-cover transition-transform duration-500 [transform:scale(var(--base-scale))] hover:[transform:scale(calc(var(--base-scale)*1.05))]"
               />
             </div>
           </div>
