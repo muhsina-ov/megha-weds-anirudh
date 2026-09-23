@@ -66,13 +66,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ delay: 0.4, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-5 flex flex-col items-center leading-[0.82]"
+            className="mt-5 flex w-full flex-col items-center overflow-visible leading-[1.04]"
           >
-            <span className="text-gold-foil font-display text-[4.25rem] font-light">
+            <span className="text-gold-foil font-display text-6xl font-light">
               {wedding.bride.name}
             </span>
             <span className="font-script text-gold/80 my-1 text-3xl">and</span>
-            <span className="text-gold-foil font-display text-[4.25rem] font-light">
+            <span className="text-gold-foil font-display text-6xl font-light">
               {wedding.groom.name}
             </span>
           </motion.h1>
@@ -115,7 +115,7 @@ export function Hero() {
               alt={`${wedding.bride.name} & ${wedding.groom.name}`}
               width={682}
               height={1024}
-              className="h-full w-full object-cover object-center brightness-105 contrast-105"
+              className="h-full w-full object-cover object-[50%_22%] brightness-105 contrast-105"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/95 via-emerald-deep/20 to-transparent" />
             <div className="pointer-events-none absolute inset-0 rounded-t-full ring-1 ring-inset ring-gold/40" />

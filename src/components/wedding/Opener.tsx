@@ -65,10 +65,10 @@ export function Opener({ onOpen }: { onOpen: () => void }) {
             <span className="text-gold/80 text-[0.55rem] tracking-[0.5em] uppercase">
               A wedding invitation
             </span>
-            <h1 className="text-gold-foil font-display mt-5 text-5xl leading-none font-light">
-              {wedding.bride.name}
-              <span className="font-script text-gold/80 mx-3 text-3xl">&amp;</span>
-              {wedding.groom.name}
+            <h1 className="text-gold-foil font-display mt-5 flex flex-col items-center overflow-visible text-5xl leading-[1.04] font-light">
+              <span>{wedding.bride.name}</span>
+              <span className="font-script text-gold/80 my-1 text-3xl">&amp;</span>
+              <span>{wedding.groom.name}</span>
             </h1>
             <span className="rule-gold mt-6 w-32" />
 

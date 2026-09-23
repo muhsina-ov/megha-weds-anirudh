@@ -19,14 +19,14 @@ export const wedding = {
     imagePosition: "32% 16%",
     imageScale: 1.45,
   },
-  // 6 December 2026, 11:30 AM IST
-  dateISO: "2026-12-06T11:30:00+05:30",
+  // 6 December 2026, events from 11:00 AM IST
+  dateISO: "2026-12-06T11:00:00+05:30",
   endISO: "2026-12-06T15:00:00+05:30",
   dateLabel: "Sunday, 6 December 2026",
   dateShortLabel: "06 · 12 · 2026",
   dayNumber: "06",
   monthYear: "December 2026",
-  timeLabel: "11:30 AM onwards",
+  timeLabel: "11:00 AM onwards",
   muhurthamLabel: "Muhurtham · 11:30 AM – 12:00 PM",
   venue: {
     name: "Kadody Convention Centre",

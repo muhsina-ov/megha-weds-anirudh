@@ -39,10 +39,6 @@ export function Footer() {
           <p className="font-script text-gold-foil mt-6 text-4xl leading-snug">
             Come bless our beginning
           </p>
-          <p className="text-ivory/70 mx-auto mt-5 max-w-sm text-sm leading-relaxed">
-            Your presence is the only gift we ask for. Bring your laughter, your appetite
-            and your dancing shoes — we have saved a seat, and a story, for you.
-          </p>
         </Reveal>
 
         <Reveal delay={0.12}>
