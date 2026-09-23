@@ -16,8 +16,8 @@ export const wedding = {
     origin: "Calicut, Kerala",
     note: "Rooted in love, grace, and rich memories of Calicut, ready to write our new chapter of shared laughter and dreams.",
     image: "/images/bride.png",
-    imagePosition: "32% 16%",
-    imageScale: 1.45,
+    imagePosition: "42% 0%",
+    imageScale: 1.1,
   },
   // 6 December 2026, events from 11:00 AM IST
   dateISO: "2026-12-06T11:00:00+05:30",
