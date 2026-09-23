@@ -107,18 +107,18 @@ export function Hero() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="relative mt-auto w-[84%] max-w-[340px] aspect-[4/5] rounded-t-full p-[2.5px] bg-gradient-to-b from-gold/80 via-gold/30 to-transparent shadow-[0_25px_50px_rgba(0,0,0,0.55)]"
+          className="relative mt-auto w-[84%] max-w-[340px] overflow-hidden rounded-[1.75rem] border border-gold/30 shadow-[0_25px_50px_rgba(0,0,0,0.55)]"
         >
-          <div className="relative h-full w-full rounded-t-full overflow-hidden">
+          <div className="relative w-full overflow-hidden">
             <img
               src={images.cartoon}
               alt={`${wedding.bride.name} & ${wedding.groom.name} — illustrated portrait`}
               width={408}
               height={612}
-              className="h-full w-full object-cover object-[50%_15%] brightness-105 contrast-105"
+              className="h-auto w-full brightness-105 contrast-105"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/95 via-emerald-deep/20 to-transparent" />
-            <div className="pointer-events-none absolute inset-0 rounded-t-full ring-1 ring-inset ring-gold/40" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/60 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] ring-1 ring-inset ring-gold/40" />
           </div>
         </motion.div>
       </div>
