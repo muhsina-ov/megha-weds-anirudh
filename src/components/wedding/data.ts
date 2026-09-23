@@ -15,9 +15,9 @@ export const wedding = {
     line: "Daughter of Rajeevan P & Reeja V",
     origin: "Calicut, Kerala",
     note: "Rooted in love, grace, and rich memories of Calicut, ready to write our new chapter of shared laughter and dreams.",
-    image: "/images/bride.png",
-    imagePosition: "42% 0%",
-    imageScale: 1.1,
+    image: "/images/bride.jpg",
+    imagePosition: "center 0%",
+    imageScale: 1,
   },
   // 6 December 2026, events from 11:00 AM IST
   dateISO: "2026-12-06T11:00:00+05:30",
