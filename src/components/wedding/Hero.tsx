@@ -113,8 +113,8 @@ export function Hero() {
             <img
               src={images.cartoon}
               alt={`${wedding.bride.name} & ${wedding.groom.name} — illustrated portrait`}
-              width={853}
-              height={1280}
+              width={408}
+              height={612}
               className="h-full w-full object-cover object-[50%_15%] brightness-105 contrast-105"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-emerald-deep/95 via-emerald-deep/20 to-transparent" />
